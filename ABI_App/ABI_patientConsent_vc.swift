@@ -15,7 +15,8 @@ class ABI_patientConsent_vc: UIViewController {
     @IBOutlet var pc_nameOfPatient_tf: UITextField!
     @IBOutlet var pc_date_tf: UITextField!
     @IBOutlet var pc_signature_view: UIView!
-    
+    @IBOutlet var pc_enter_button: UIButton!
+
     @IBAction func pc_enter_button(_ sender: Any) {
     }
     
@@ -23,7 +24,11 @@ class ABI_patientConsent_vc: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pc_nameOfPatient_tf.layer.cornerRadius = 13
+        pc_date_tf.layer.cornerRadius = 13
+        pc_signature_view.layer.cornerRadius = 13
+        pc_enter_button.layer.cornerRadius = 15
+        
         // Do any additional setup after loading the view.
     }
     

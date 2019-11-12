@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		80616E27237A2C90009D82FF /* ABI_patientConsent_vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80616E26237A2C90009D82FF /* ABI_patientConsent_vc.swift */; };
 		80616E29237A5271009D82FF /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80616E28237A5271009D82FF /* testViewController.swift */; };
+		80616E2B237A7F1F009D82FF /* ABI_form_formconsent_vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80616E2A237A7F1F009D82FF /* ABI_form_formconsent_vc.swift */; };
 		80C5B9D72379047C0095C880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5B9D62379047C0095C880 /* AppDelegate.swift */; };
 		80C5B9D92379047C0095C880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5B9D82379047C0095C880 /* ViewController.swift */; };
 		80C5B9DC2379047C0095C880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C5B9DA2379047C0095C880 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		80616E26237A2C90009D82FF /* ABI_patientConsent_vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABI_patientConsent_vc.swift; sourceTree = "<group>"; };
 		80616E28237A5271009D82FF /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		80616E2A237A7F1F009D82FF /* ABI_form_formconsent_vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABI_form_formconsent_vc.swift; sourceTree = "<group>"; };
 		80C5B9D32379047C0095C880 /* ABI_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABI_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C5B9D62379047C0095C880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C5B9D82379047C0095C880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,8 +50,8 @@
 		80C5B9CA2379047C0095C880 = {
 			isa = PBXGroup;
 			children = (
-				80C5B9D52379047C0095C880 /* ABI_App */,
 				80C5B9D42379047C0095C880 /* Products */,
+				80C5B9D52379047C0095C880 /* ABI_App */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +75,7 @@
 				80C5B9E82379164E0095C880 /* ABI_login_vc.swift */,
 				80C5B9EA23791A610095C880 /* ABI_register_vc.swift */,
 				80C5B9EC23791EBB0095C880 /* ABI_form.storyboard */,
+				80616E2A237A7F1F009D82FF /* ABI_form_formconsent_vc.swift */,
 				80616E26237A2C90009D82FF /* ABI_patientConsent_vc.swift */,
 				80616E28237A5271009D82FF /* testViewController.swift */,
 			);
@@ -156,6 +159,7 @@
 				80C5B9D92379047C0095C880 /* ViewController.swift in Sources */,
 				80C5B9D72379047C0095C880 /* AppDelegate.swift in Sources */,
 				80616E27237A2C90009D82FF /* ABI_patientConsent_vc.swift in Sources */,
+				80616E2B237A7F1F009D82FF /* ABI_form_formconsent_vc.swift in Sources */,
 				80C5B9E92379164E0095C880 /* ABI_login_vc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZ939ESDHL;
+				DEVELOPMENT_TEAM = V7W57A6S4M;
 				INFOPLIST_FILE = ABI_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -321,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DZ939ESDHL;
+				DEVELOPMENT_TEAM = V7W57A6S4M;
 				INFOPLIST_FILE = ABI_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
