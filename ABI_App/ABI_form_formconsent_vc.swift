@@ -29,30 +29,103 @@ class ABI_form_formconsent_vc: UIViewController {
     @IBOutlet var fc_mmhg2_tf: UITextField!
     @IBOutlet var fc_mmhg3_tf: UITextField!
     @IBOutlet var fc_abiRight_tf: UITextField!
+    @IBOutlet var fc_abiWhy_view: UIView!
+    @IBOutlet var fc_assessed_view: UIView!
+    @IBOutlet var fc_summary_button: UIButton!
+    @IBOutlet var fc_print_button: UIButton!
+    @IBOutlet var fc_submit_button: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fc_date_tf.layer.cornerRadius = 13
-        fc_gender_tf.layer.cornerRadius = 13
-        fc_age_tf.layer.cornerRadius = 13
-        fc_patientName_tf.layer.cornerRadius = 13
-        fc_weight_tf.layer.cornerRadius = 13
-        fc_province_tf.layer.cornerRadius = 13
-        fc_hospital_tf.layer.cornerRadius = 13
-        fc_mdName_tf.layer.cornerRadius = 13
-        fc_patientInfo_view.layer.cornerRadius = 13
-        fc_mobility_view.layer.cornerRadius = 13
-        fc_interpretABI_view.layer.cornerRadius = 13
-        fc_armPressure_tf.layer.cornerRadius = 13
-        fc_ptaPressure_tf.layer.cornerRadius = 13
-        fc_dpaPressure_tf.layer.cornerRadius = 13
-        fc_abiLeft_tf.layer.cornerRadius = 13
-        fc_mmhg1_tf.layer.cornerRadius = 13
-        fc_mmhg2_tf.layer.cornerRadius = 13
-        fc_mmhg3_tf.layer.cornerRadius = 13
-        fc_abiRight_tf.layer.cornerRadius = 13
+        fc_date_tf.layer.cornerRadius = 8
+        fc_date_tf.layer.borderWidth = 1
+        fc_date_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_gender_tf.layer.cornerRadius = 8
+        fc_gender_tf.layer.borderWidth = 1
+        fc_gender_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_age_tf.layer.cornerRadius = 8
+        fc_age_tf.layer.borderWidth = 1
+        fc_age_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_patientName_tf.layer.cornerRadius = 8
+        fc_patientName_tf.layer.borderWidth = 1
+        fc_patientName_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_weight_tf.layer.cornerRadius = 8
+        fc_weight_tf.layer.borderWidth = 1
+        fc_weight_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_province_tf.layer.cornerRadius = 8
+        fc_province_tf.layer.borderWidth = 1
+        fc_province_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_hospital_tf.layer.cornerRadius = 8
+        fc_hospital_tf.layer.borderWidth = 1
+        fc_hospital_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_mdName_tf.layer.cornerRadius = 8
+        fc_mdName_tf.layer.borderWidth = 1
+        fc_mdName_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_patientInfo_view.layer.cornerRadius = 8
+        fc_patientInfo_view.layer.borderWidth = 1
+        fc_patientInfo_view.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_mobility_view.layer.cornerRadius = 8
+        fc_mobility_view.layer.borderWidth = 1
+        fc_mobility_view.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_interpretABI_view.layer.cornerRadius = 8
+        fc_interpretABI_view.layer.borderWidth = 1
+        fc_interpretABI_view.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_armPressure_tf.layer.cornerRadius = 8
+        fc_armPressure_tf.layer.borderWidth = 1
+        fc_armPressure_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_ptaPressure_tf.layer.cornerRadius = 8
+        fc_ptaPressure_tf.layer.borderWidth = 1
+        fc_ptaPressure_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_dpaPressure_tf.layer.cornerRadius = 8
+        fc_dpaPressure_tf.layer.borderWidth = 1
+        fc_dpaPressure_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_abiLeft_tf.layer.cornerRadius = 8
+        fc_abiLeft_tf.layer.borderWidth = 1
+        fc_abiLeft_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_mmhg1_tf.layer.cornerRadius = 8
+        fc_mmhg1_tf.layer.borderWidth = 1
+        fc_mmhg1_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_mmhg2_tf.layer.cornerRadius = 8
+        fc_mmhg2_tf.layer.borderWidth = 1
+        fc_mmhg2_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_mmhg3_tf.layer.cornerRadius = 8
+        fc_mmhg3_tf.layer.borderWidth = 1
+        fc_mmhg3_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_abiRight_tf.layer.cornerRadius = 8
+        fc_abiRight_tf.layer.borderWidth = 1
+        fc_abiRight_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_abiWhy_view.layer.cornerRadius = 8
+        fc_abiWhy_view.layer.borderWidth = 1
+        fc_abiWhy_view.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_assessed_view.layer.cornerRadius = 8
+        fc_assessed_view.layer.borderWidth = 1
+        fc_assessed_view.layer.borderColor = UIColor.gray.cgColor
+        
+        fc_summary_button.layer.cornerRadius = 13
+        fc_print_button.layer.cornerRadius = 13
+        fc_submit_button.layer.cornerRadius = 13
         
         
         // Do any additional setup after loading the view.

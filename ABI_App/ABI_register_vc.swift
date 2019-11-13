@@ -27,13 +27,28 @@ class ABI_register_vc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        register_firstName_tf.layer.cornerRadius = 13
-        register_lastName_tf.layer.cornerRadius = 13
-        register_email_tf.layer.cornerRadius = 13
-        register_password_tf.layer.cornerRadius = 13
-        register_confirmPass_tf.layer.cornerRadius = 13
-        register_button.layer.cornerRadius = 15
-
+        register_firstName_tf.layer.cornerRadius = 8
+        register_firstName_tf.layer.borderWidth = 1
+        register_firstName_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        register_lastName_tf.layer.cornerRadius = 8
+        register_lastName_tf.layer.borderWidth = 1
+        register_lastName_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        register_email_tf.layer.cornerRadius = 8
+        register_email_tf.layer.borderWidth = 1
+        register_email_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        register_password_tf.layer.cornerRadius = 8
+        register_password_tf.layer.borderWidth = 1
+        register_password_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        register_confirmPass_tf.layer.cornerRadius = 8
+        register_confirmPass_tf.layer.borderWidth = 1
+        register_confirmPass_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        register_button.layer.cornerRadius = 10
+        register_button.layer.borderWidth = 1
         // Do any additional setup after loading the view.
     }
     

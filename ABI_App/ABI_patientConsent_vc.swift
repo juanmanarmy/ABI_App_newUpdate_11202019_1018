@@ -24,10 +24,20 @@ class ABI_patientConsent_vc: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pc_nameOfPatient_tf.layer.cornerRadius = 13
-        pc_date_tf.layer.cornerRadius = 13
-        pc_signature_view.layer.cornerRadius = 13
+        pc_nameOfPatient_tf.layer.cornerRadius = 8
+        pc_nameOfPatient_tf.layer.borderWidth = 1
+        pc_nameOfPatient_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        pc_date_tf.layer.cornerRadius = 8
+        pc_date_tf.layer.borderWidth = 1
+        pc_date_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        pc_signature_view.layer.cornerRadius = 8
+        pc_signature_view.layer.borderWidth = 1
+        pc_signature_view.layer.borderColor = UIColor.gray.cgColor
+        
         pc_enter_button.layer.cornerRadius = 15
+        
         
         // Do any additional setup after loading the view.
     }

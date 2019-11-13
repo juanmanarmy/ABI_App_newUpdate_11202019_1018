@@ -1,0 +1,6 @@
+framework module Pods_ABI_App {
+  umbrella header "Pods-ABI_App-umbrella.h"
+
+  export *
+  module * { export * }
+}

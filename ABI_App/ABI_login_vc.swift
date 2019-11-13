@@ -23,9 +23,17 @@ class ABI_login_vc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        login_username_tf.layer.cornerRadius = 13
-        login_password_tf.layer.cornerRadius = 13
+        login_username_tf.layer.cornerRadius = 8
+        login_username_tf.layer.borderWidth = 1
+        login_username_tf.layer.borderColor = UIColor.gray.cgColor
+        
+        login_password_tf.layer.cornerRadius = 8
+        login_password_tf.layer.borderWidth = 1
+        login_password_tf.layer.borderColor = UIColor.gray.cgColor
+        
         login_button.layer.cornerRadius = 15
+        
+        
         
         
         
