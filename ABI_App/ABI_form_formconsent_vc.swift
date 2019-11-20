@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import iOSDropDown
+import RealmSwift
+import DLRadioButton
 
 class ABI_form_formconsent_vc: UIViewController {
+    
+    var vc_test_obj: Results<test_realm>!
     
     @IBOutlet var fc_date_tf: UITextField!
     @IBOutlet var fc_gender_tf: UITextField!
@@ -29,15 +34,54 @@ class ABI_form_formconsent_vc: UIViewController {
     @IBOutlet var fc_mmhg2_tf: UITextField!
     @IBOutlet var fc_mmhg3_tf: UITextField!
     @IBOutlet var fc_abiRight_tf: UITextField!
-    @IBOutlet var fc_abiWhy_view: UIView!
-    @IBOutlet var fc_assessed_view: UIView!
     @IBOutlet var fc_summary_button: UIButton!
     @IBOutlet var fc_print_button: UIButton!
     @IBOutlet var fc_submit_button: UIButton!
+    @IBOutlet var fc_abiWhy_tf: UITextField!
+    @IBOutlet var fc_assessed_tf: UITextField!
+    @IBOutlet var fc_genderDropDown_tf: DropDown!
+    
+    
+    @IBOutlet var legPainCheckBox: DLRadioButton!
+    
+    
+    
+    
+    //connection in RealmProcess
+    let realm = RealmProcess.shared.realm
+    
+    @IBAction func fc_submit_button(_ sender: Any) {
+        
+        save_data()
+    }
+    
+    func save_data() {
+        //add new data in realm database
+        let patient_uid = UUID().uuidString
+        let newData = test_realm(patientID: patient_uid,
+                                 PatientName: fc_patientName_tf.text!,
+                                 Age: fc_age_tf.text!,
+                                 Gender: fc_gender_tf.text!,
+                                 Province: fc_province_tf.text!,
+                                 Weight: fc_weight_tf.text!,
+                                 MdName: fc_mdName_tf.text!,
+                                 Hospital: fc_hospital_tf.text!,
+                                 Date: fc_date_tf.text!)
+        print("Insert successfully")
+        
+        RealmProcess.shared.write(newData)
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // enable multiple selection for water, beer and wine buttons.
+        //self.legPainCheckBox.isMultipleSelectionEnabled = true;
+     
+        // The list of array to display. Can be changed dynamically
+        fc_genderDropDown_tf.optionArray = ["Male", "Female"]
+        
         
         fc_date_tf.layer.cornerRadius = 8
         fc_date_tf.layer.borderWidth = 1
@@ -115,13 +159,13 @@ class ABI_form_formconsent_vc: UIViewController {
         fc_abiRight_tf.layer.borderWidth = 1
         fc_abiRight_tf.layer.borderColor = UIColor.gray.cgColor
         
-        fc_abiWhy_view.layer.cornerRadius = 8
-        fc_abiWhy_view.layer.borderWidth = 1
-        fc_abiWhy_view.layer.borderColor = UIColor.gray.cgColor
+        fc_abiWhy_tf.layer.cornerRadius = 8
+        fc_abiWhy_tf.layer.borderWidth = 1
+        fc_abiWhy_tf.layer.borderColor = UIColor.gray.cgColor
         
-        fc_assessed_view.layer.cornerRadius = 8
-        fc_assessed_view.layer.borderWidth = 1
-        fc_assessed_view.layer.borderColor = UIColor.gray.cgColor
+        fc_assessed_tf.layer.cornerRadius = 8
+        fc_assessed_tf.layer.borderWidth = 1
+        fc_assessed_tf.layer.borderColor = UIColor.gray.cgColor
         
         fc_summary_button.layer.cornerRadius = 13
         fc_print_button.layer.cornerRadius = 13

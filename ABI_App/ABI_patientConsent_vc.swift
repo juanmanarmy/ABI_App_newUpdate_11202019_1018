@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ABI_patientConsent_vc: UIViewController {
 
     
@@ -16,7 +18,10 @@ class ABI_patientConsent_vc: UIViewController {
     @IBOutlet var pc_date_tf: UITextField!
     @IBOutlet var pc_signature_view: UIView!
     @IBOutlet var pc_enter_button: UIButton!
-
+    @IBOutlet var pc_clearSign_button: UIButton!
+    @IBOutlet var pc_signPad_view: YPDrawSignatureView!
+    @IBOutlet var pc_saveSign_button: UIButton!
+    
     @IBAction func pc_enter_button(_ sender: Any) {
     }
     
@@ -36,13 +41,32 @@ class ABI_patientConsent_vc: UIViewController {
         pc_signature_view.layer.borderWidth = 1
         pc_signature_view.layer.borderColor = UIColor.gray.cgColor
         
+        pc_clearSign_button.layer.cornerRadius = 15
         pc_enter_button.layer.cornerRadius = 15
+        pc_saveSign_button.layer.cornerRadius = 15
         
         
         // Do any additional setup after loading the view.
     }
+    @IBAction func pc_clearSign(_ sender: Any) {
+        pc_signPad_view.clear()
+    }
     
-
+    @IBAction func pc_saveSIgn(_ sender: Any) {
+        // Getting the Signature Image from self.drawSignatureView using the method getSignature().
+        print("working save button")
+        if let signatureImage = self.pc_signPad_view.getSignature(scale: 10) {
+            
+            // Saving signatureImage from the line above to the Photo Roll.
+            // The first time you do this, the app asks for access to your pictures.
+            UIImageWriteToSavedPhotosAlbum(signatureImage, nil, nil, nil)
+            
+            print("working get signature")
+            // Since the Signature is now saved to the Photo Roll, the View can be cleared anyway.
+            self.pc_signPad_view.clear()
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -6,7 +6,9 @@ target 'ABI_App' do
   use_frameworks!
 
   pod 'DLRadioButton', '~> 1.4'
-  
+  pod 'iOSDropDown'
+  pod 'RealmSwift'
+  pod 'ModernSearchBar'
   
   # Pods for ABI_App
 
